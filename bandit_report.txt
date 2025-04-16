@@ -1,0 +1,60 @@
+Run started:2025-04-16 10:42:15.992397
+
+Test results:
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.3/plugins/b102_exec_used.html
+   Location: cimpy/cimexamples.py:8:4
+7	    example = base / "examples" / "import_cigre_mv.py"
+8	    exec(open(example).read())
+9	
+
+--------------------------------------------------
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.3/plugins/b102_exec_used.html
+   Location: cimpy/cimexamples.py:15:4
+14	    example = base / "examples" / "export_cigre_mv.py"
+15	    exec(open(example).read())
+16	
+
+--------------------------------------------------
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.3/plugins/b102_exec_used.html
+   Location: cimpy/cimexamples.py:22:4
+21	    example = base / "examples" / "convert_to_bus_branch.py"
+22	    exec(open(example).read())
+23	
+
+--------------------------------------------------
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.3/plugins/b102_exec_used.html
+   Location: cimpy/cimexamples.py:29:4
+28	    example = base / "examples" / "add_external_network_injection.py"
+29	    exec(open(example).read())
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 21771
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 4
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 4
+Files skipped (0):
